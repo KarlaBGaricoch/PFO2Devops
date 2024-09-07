@@ -208,7 +208,7 @@
     overflow-x: auto;
     text-align: center;
     min-height: 300px;
-    width: 100%; /* Ajusta el ancho para que se ajuste al contenedor */
+    width: 100%; 
     max-width: 650px; /* Ajusta el ancho máximo de la tabla */
   }
   th, td {
@@ -358,4 +358,9 @@
       width: 100%;
     }
   }
+
+  /*Para mejoras, creo que debo mejorar en todo, la parte de hacer mobile first debo pulir bastante y entre muchas cosas más, 
+  pero en realidad el front es algo que me gusta, porque es lo primero que aprendí (perdón por tanta explicación) °-° 
+  estaré a la espera de la devolución, muchas gracias!*/
+
   
