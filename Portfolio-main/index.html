@@ -17,12 +17,15 @@
 <body>
     <header class="header"> <!--En el header pondré algunos items, que en su mayoria y por el momento no tendré navegación interna-->
         <a href="#" class="logo"><span>Tech</span>Nourish</a>
-        <nav class="navbar">
-            <a href="#" class="active">Portfolio</a>
-            <a href="#">Services</a>
-            <a href="#">Proyectos</a>
-            <a href="#">Formación</a>
-        </nav>
+        <div class="menu">
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <nav class="navbar" id="burger">
+                <a href="#" class="active">Portfolio</a>
+                <a href="#">Qué realizo?</a>
+                <a href="#">Proyectos</a>
+                <a href="#">Formación</a>
+            </nav>
+        </div>
         <a href="mailto:karlagaricoch.it@gmail.com" class="contact">Contáctame</a>
     </header>
 
@@ -94,6 +97,47 @@
         </div>
     </div>
 
+    <section class="container-do">
+        <div class="cardsgrid">
+            <div class="card">
+                <div class="img-box-do">
+                    <img src="imagen/nutri1.jpg" alt="nutrifood">
+                </div>
+                <div class="card-content">
+                    <h1 class="card-heading">Nutrición</h1>
+                    <p class="card-text">
+                        Me gusta investigar y estudiar sobre las patologías, modo de prevención y tratamientos. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-box-do">
+                    <img src="imagen/nutri2.jpeg" alt="nutrifood2">
+                </div>
+                <div class="card-content">
+                    <h1 class="card-heading">Crear e innovar</h1>
+                    <p class="card-text">
+                        Hago recetas saludables y también de pastelería, crear nuevas recetas es mi trabajo diario, tratando de innovar, que sea rico, saludable y delicioso. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-box-do">
+                    <img src="imagen/imagen3.jpg" alt="software">
+                </div>
+                <div class="card-content">
+                    <h1 class="card-heading">Codear</h1>
+                    <p class="card-text">
+                        Sigue siendo un mundo nuevo y desafiante, pero me gusta mucho, creo, que me gusta más el area del diseño, aunque me llama poderosamente la atención ciberseguridad y data science. 
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <section class="contact-form">
         <h2 class="contact-me">Ponte en contacto con TechNourish</h2>
         <form action="#">
@@ -133,5 +177,7 @@
         </ul>
         <p class="copyright">© 2024 Garicoch Karla | Una página hecha con <img src="imagen/cerebro.png" alt="" height="30px"></p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
