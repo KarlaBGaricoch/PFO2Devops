@@ -1,8 +1,47 @@
-![sample2](https://github.com/user-attachments/assets/ac41583f-6f20-4b2f-b7bb-6be214e12383)# miportfolio
-# Imagenes de mi web
-En mis lineas de codigo cree mi primer portfolio, en donde incluyo datos e info de lo que realizo. 
-![sample](https://github.com/user-attachments/assets/be1df838-3685-4705-8a3b-22b0dd5dd303)
-![sample1](https://github.com/user-attachments/assets/2d8e3d5a-75ba-4254-9936-c0a37884f31f)
-![sample2](https://github.com/user-attachments/assets/c8ea40b2-f55d-4313-a50a-87de621168ae)
-![sample3](https://github.com/user-attachments/assets/943407ce-1409-465f-961e-7cd992dcd9e1)
-![sample4](https://github.com/user-attachments/assets/5a4be994-5cef-42e5-8469-b6ce68b9f4b1)
+# Proyecto Web Dockerizado
+
+Este proyecto contiene una aplicación web desarrollada previamente en la carrera, ahora dockerizada para facilitar su ejecución.
+
+## 🐳 Servicios Utilizados
+
+- **Docker Compose**: Orquestador que permite ejecutar los servicios con un solo comando.
+
+## 🧱 Estructura del Proyecto
+
+```
+.
+├── public/                        
+├── imagen/                        
+├── docker-compose.yml         
+└── default.conf                 
+```
+
+---
+
+## 🚀 Cómo ejecutar el proyecto
+
+### 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/KarlaBGaricoch/PFO2Devops
+```
+
+### 2. Ejecutar Docker Compose
+
+```bash
+docker-compose up -d
+```
+
+Esto descargará las imágenes necesarias (si no están) y levantará los servicios en segundo plano.
+
+### 3. Acceder a la aplicación
+
+Abre tu navegador en:
+
+```
+http://localhost:8080
+```
+
+## ✍ Autor
+
+Karla Garicoch
