@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio</title>
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Portfolio de Garicoch Karla, Front End developer y Tester QA.">
+    <meta property="og:title" content="Portfolio de una desarrolladora front end y QA.">
+    <meta property="og:description" content="Portfolio de una desarrolladora front end y QA.">
+    <meta property="og:image" content="/images/me.jpeg">
+    <link rel="icon" type="image/jpeg" href="images/me.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head> 
+
+<body>
+    <header class="header"> <!--En el header pondré algunos items, que en su mayoria y por el momento no tendré navegación interna-->
+        <a href="#" class="logo"><span>Tech</span>Nourish</a>
+        <div class="menu">
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <nav class="navbar" id="burger">
+                <a href="#" class="active">Portfolio</a>
+                <a href="#">Qué realizo?</a>
+                <a href="#">Proyectos</a>
+                <a href="#">Formación</a>
+            </nav>
+        </div>
+        <a href="mailto:karlagaricoch.it@gmail.com" class="contact">Contáctame</a>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h3>Hola</h3>
+
+            <h1>Soy <span class="name">Karla,<br></span>
+            Front-End Developer</h1> <!--Bueno, el título me queda grande, "Frontend developer", pero lo puse ;( jeje )-->
+
+            <p>Soy una persona apasionada por la ciencia y se sumó a la lista, la tecnología. Te invito a dar un recorrido por mi portfolio. </p>
+
+            <div class="btn-box"> <!--Acá creé dos botones que me van a direccionar hacia la sección de la página que corresponda-->
+                <button class="btn-1" onclick="location.href='#about'">Sobre mi</button>
+                <button class="btn-2" onclick="location.href='#table'">Tecnologias</button>
+            </div>
+        </div>
+        
+        <div class="img-box">
+            <img src="imagen/me.jpeg" alt="">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+
+        <div class="about-img">
+            <img src="imagen/nutriaprogramadora.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">Sobre <span>mi</span></h2>
+            <h3>Soy <span>Desarrolladora Front-End y Tester QA</span></h3>
+            <p>También estudio "Licenciatura en Nutrición y Técnica en alimentos", <br>por eso decidí unir ambas pasiones y creé el nombre, TechNourish,
+            la tecnología y la nutrición, <br>complementandolas y potenciando la experiencia de cada usuario/paciente. 
+            </p>
+            <a href="#" class="btn-2">Estudios</a>
+        </div>
+    </section>
+
+    <div id="table" class="tablaargel-container"> <!--Con esa tabla vi estrellitas, pero lo logré, aunque iré mejorando-->
+        <div class="tablaargel">
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Tecnologias</th>
+                    <th>Hobbies</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>HTML, CSS, JS</td>
+                    <td>Leer</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Python, SQL, c#</td>
+                    <td>Cantar</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Rapise, Selenium</td>
+                    <td>Cocinar</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Cobol (Me gustaria aprender mucho más)</td>
+                    <td>Senderismo</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <section class="container-do">
+        <div class="cardsgrid">
+            <div class="card">
+                <div class="img-box-do">
+                    <img src="imagen/nutri1.jpg" alt="nutrifood">
+                </div>
+                <div class="card-content">
+                    <h1 class="card-heading">Nutrición</h1>
+                    <p class="card-text">
+                        Me gusta investigar y estudiar sobre las patologías, modo de prevención y tratamientos. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-box-do">
+                    <img src="imagen/nutri2.jpeg" alt="nutrifood2">
+                </div>
+                <div class="card-content">
+                    <h1 class="card-heading">Crear e innovar</h1>
+                    <p class="card-text">
+                        Hago recetas saludables y también de pastelería, crear nuevas recetas es mi trabajo diario, tratando de innovar, que sea rico, saludable y delicioso. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-box-do">
+                    <img src="imagen/imagen3.jpg" alt="software">
+                </div>
+                <div class="card-content">
+                    <h1 class="card-heading">Codear</h1>
+                    <p class="card-text">
+                        Sigue siendo un mundo nuevo y desafiante, pero me gusta mucho, creo, que me gusta más el area del diseño, aunque me llama poderosamente la atención ciberseguridad y data science. 
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2 class="contact-me">Ponte en contacto con TechNourish</h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Nombre completo">
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Numero de teléfono">
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Tema">
+            </div>
+            
+            <textarea name="" id="" cols="30" rows="10" 
+            placeholder="Su mensaje"></textarea>
+            <input type="submit" value="Enviar" class="btn-1">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.facebook.com/profile.php?id=61564500835669&sfnsn=scwspwa&mibextid=RUbZ1f"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="https://www.linkedin.com/in/karla-bel%C3%A9n-garicoch-54241a279/"0><i class='bx bxl-linkedin-square' ></i></a>
+            <a href="https://www.instagram.com/karla.garicoch?igsh=Mm1wZ2p4Zjhjdnhu"><i class='bx bxl-instagram' ></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#">Politica de privacidad</a>
+            </li>
+        </ul>
+        <p class="copyright">© 2024 Garicoch Karla | Una página hecha con <img src="imagen/cerebro.png" alt="" height="30px"></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
